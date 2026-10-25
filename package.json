@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "reveal-md",
     "build": "reveal-md lessons/index.md --static dist --assets-dir dist/_assets --static-dirs .reveal-md,lessons",
     "fix:metadata": "node fix-metadata.js",
@@ -14,7 +13,8 @@
     "lint:spell": "yaspeller .",
     "lint": "npm run lint:prettier && npm run lint:code",
     "lint:code": "eslint --ext .js,.ts,.md .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +30,7 @@
     "prettier": "^2.8.8",
     "reveal-md": "^5.3.4",
     "typescript": "^4.8.4",
+    "vitest": "^5.0.5",
     "yaspeller": "^9.1.0"
   },
   "lint-staged": {
