@@ -5,3 +5,9 @@ dist
 .eslintcache
 tmp
 .idea
+
+# Vitest reports and artifacts
+.vitest/
+
+# TypeScript
+tsconfig.json
